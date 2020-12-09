@@ -1,0 +1,12 @@
+import random
+n = int(input("Eu pensei um numero entre 0 e 5 . Adivinha o numero q pensei ? "))
+a = random.choice([0,1,2,3,4,5])
+print("O numero que pensei foi {}".format(a))
+if n==a:
+    print("Acertou")
+else:
+    print("Errou!")
+
+
+
+# estudar a funcao random radint e choice!

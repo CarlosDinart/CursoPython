@@ -1,0 +1,9 @@
+# palindromo - quando a leitura da frase tanto faz frente para traz ou traz para frente preserva o sentido da leitura;
+
+frase = str(input('Digite uma frase: ')).strip().replace(' ', '')
+print(frase[::-1])
+
+if frase == frase[::-1]:
+    print('Essa frase é palíndrome')
+else:
+    print('Essa frase não é palíndrome')

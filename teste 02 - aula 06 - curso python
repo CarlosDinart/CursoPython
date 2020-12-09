@@ -1,0 +1,16 @@
+n = input("A digite algo? ")
+print(n.isalnum())
+
+
+
+
+
+
+
+
+
+
+
+
+
+

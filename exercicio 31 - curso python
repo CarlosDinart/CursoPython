@@ -1,0 +1,5 @@
+d = float(input("Qual a distancia ? "))
+if d <= 200:
+    print("O valor da passagem ate 200 km é R$ {:.2f}".format(d * 0.50))
+else:
+    print("O valor da passagem superior a 200 km é R$ {:.2f}".format(d * 0.45))

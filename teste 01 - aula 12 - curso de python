@@ -1,0 +1,10 @@
+n = str(input("Digite um nome ? "))
+
+if n == "carlos":
+    print("lindao!")
+elif n== "lais":
+    print("lindinha!")
+else:
+    print("nome feio")
+
+# teste foi apresentar as estruturas condicional alinhadas (if, elif, else).

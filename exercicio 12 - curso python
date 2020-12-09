@@ -1,0 +1,4 @@
+n1 =float(input(" Qual o preco do produto ? "))
+n2 =5
+print("O produto esta, com desconto de R$ {} ! O Novo valor é de R$ {}".format(n2, n1 - ((n1 * n2)/100)))
+

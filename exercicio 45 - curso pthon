@@ -1,0 +1,47 @@
+import random
+itens = ("pedra", "papel", "tesoura")
+computador = random.choice(itens) # jogo do jogador.
+
+jogador = str(input("Qua o seu jogo jogador ? ")).strip() # Jogo do jogador.
+print("O jogador jogou {}".format(jogador))
+print("O computador jogou: {}".format(computador))
+
+# Regras do jogo:
+# Pedra ganha da Tesoura
+#Tesoura ganha do Papel
+#Papel ganha da Pedra
+
+if computador == "pedra":
+    if jogador == "papel":
+        print("Jogador Ganhou!")
+    elif jogador == "tesoura":
+        print("Computador Ganhou!")
+    else:
+        print("Empatou")
+
+elif computador == "papel":
+    if jogador == "pedra":
+        print("Computador Ganhou!")
+    elif jogador == "tesoura":
+        print("Jogador Ganhou!")
+    else:
+        print("Empatou")
+
+else:
+    if jogador == "pedra":
+        print("Jogador Ganhou!")
+    elif jogador == "papel":
+        print("Computador Ganhou!")
+    else:
+        print("Empatou")
+
+
+
+
+
+
+
+
+
+
+

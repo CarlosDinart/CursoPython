@@ -1,0 +1,9 @@
+vf = float(input("Qual o valor do financiamento? "))
+t = int(input("Qual o tempo em anos? "))
+r = float(input("Qual a sua renda ? "))
+p = vf / (t * 12)
+print("O valor da parcela é de R$ {:.2f}".format(p))
+if p <= (r * 30/100):
+    print("Financimento Aprovado !")
+else:
+    print("Financiamento Reprovado! A parcela supera a margem da renda!")

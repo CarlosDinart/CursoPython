@@ -1,0 +1,12 @@
+c = ""
+print("Masculino digite [M]")
+print("Femino digite [F]")
+c = str(input("Digite seu sexo ? ")).upper()
+while c == "M" and c == "F":
+    
+
+    print("A digitacao esta errada! Digite novamente.")
+print("Obrigado!")
+
+
+

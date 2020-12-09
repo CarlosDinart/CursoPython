@@ -1,0 +1,23 @@
+"""nome = str(input("Digite seu nome ? ")).strip()
+print("O total de letras e:", len(nome) - nome.count(" "))
+print("O nome em letras maiuscula e:", nome.upper())
+print("O nome em letras minuscula e:", nome.lower())
+d = nome.split()
+print("O primeiro nome é {}, e tem letras de {}".format(d[0], len(d[0])))
+
+#nao conseguir eliminar os espacos entre as palavras: faltou acrescentando str, e strip! """""
+
+
+
+nome = str(input("Digite um nome ? ")).strip()
+print("Nome em maiuscula: {}".format(nome.upper()))
+print("Nome em minuscula: {}".format(nome.lower()))
+print("Nome inicio de frase: {}".format(nome.capitalize()))
+print("Nome em titulo: {}".format(nome.title()))
+print("Nome tem {} letras".format(len(nome) - nome.count(" ")))
+n = nome.split()
+print("O primeiro nome tem {} letras".format(len(n[0])))
+
+
+
+

@@ -1,0 +1,50 @@
+from datetime import date
+from time import sleep
+soma =0
+s = 0
+for c in range(0,4):
+    sleep(1)
+    n = str(input("Qual seu nome ? "))
+    d = int(input("Em que ano vc nasceu ? "))
+    ano = date.today().year
+    i = ano - d
+    if i == 18:
+        soma = soma + c
+        print("Agora vc é maior !")
+
+    elif i > 18:
+        soma = soma + c
+        a = i - 18
+        print("E maior! Há {} anos.".format(a))
+
+    elif i < 18:
+        s = s + c
+        b = 18 - i
+        print("E menor! e sera maior daqui ha {} anos".format(b))
+
+print("O total de pessoas maiores sao {}".format(soma))
+print("O total de pessoas menores sao {}".format(s))
+
+
+
+
+
+
+
+
+
+
+
+
+    #if d >= 18:
+       # print(s)
+
+
+
+
+
+
+
+
+
+

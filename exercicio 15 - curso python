@@ -1,0 +1,5 @@
+k = float(input("Quantos Km foi pecorrido no carro alugado? "))
+d = int(input("Quantos os dias os carros foi alugado? "))
+cd = 60
+ck = 0.15
+print("O carro alugado percorreu {} km, resultando o custo total km de R${}, \n O carro foi alugado por {} dias, resultando o custo total dias de R$ {}, \n O total a pagar pelo carro alugado KM + Dias, sera de R$ {}".format(k, (k * ck), d, (d * cd), (k * ck) + (d * cd)))

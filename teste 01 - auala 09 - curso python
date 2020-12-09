@@ -1,0 +1,8 @@
+"""frase = "Curso em Python"
+print(frase)"""
+
+frase = "  Curso em video Python  "
+dividido = frase.split()
+print(dividido[0] [2])
+
+

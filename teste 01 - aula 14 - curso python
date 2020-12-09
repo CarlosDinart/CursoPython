@@ -1,0 +1,12 @@
+"""for c in range(1,10):
+    print(c)
+print("fim")"""
+
+
+""""c = 1 #  c - e o contador inicial q comparado ao range sera o numero 1;
+while c < 10: # c menor q 10 e caondicao de parada do while (enquanto;
+    print(c)
+    c= c +1 # qunado ele retorna tem q acrescentar mais 1;
+print("fim")"""
+
+

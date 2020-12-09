@@ -1,0 +1,10 @@
+from datetime import date
+ano = (int(input(" Digite o ano do seu nascimento? ")))
+atual = date.today().year  # fomula para ano atual
+i = atual - ano  # formula para calculo da idade
+if i == 18:
+    print("E hora de se alistar! ")
+elif i < 18:
+    print("Falta {} anos para alistamento!".format(18 - i))
+elif i > 18:
+    print("Passou {} anos para alistamento!".format(i - 18))

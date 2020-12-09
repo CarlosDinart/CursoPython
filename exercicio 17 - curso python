@@ -1,0 +1,19 @@
+""""Modelo 01
+b = float(input("Digite o valor para o cateto oposto ? "))
+c = float(input("Digite o valor para o cateto adjacente ? "))
+a = (b ** 2 + c ** 2)** (1/2)
+print("O Calculo da hipotenusa e {} + {}, que é igual ao valor da hipotenusa {:.2f}".format(b, c, a)) """
+
+""""Modelo 02
+import math
+b = float(input("Digite o valor para o cateto oposto ? "))
+c = float(input("Digite o valor para o cateto adjacente ? "))
+a = (b ** 2 + c ** 2)
+print("O Calculo da hipotenusa e {} + {}, que é igual ao valor da hipotenusa {:.2f}".format(b, c, math.sqrt(a)))"""
+
+
+import math
+b = float(input("Digite o valor para o cateto oposto ? "))
+c = float(input("Digite o valor para o cateto oposto ? "))
+a = math.hypot(b, c)
+print("O Calculo da hipotenusa e {} + {}, que é igual ao valor da hipotenusa {:.2f}".format(b, c, a))

@@ -1,0 +1,16 @@
+""""nome = str(input("Digite nome de Cidade ? ")).strip()
+m = nome.capitalize()
+print("A cidade {} comeca com o nome SANTO ? {}".format(m, m.startswith("Santo")))"""
+
+
+
+
+
+
+
+
+
+nome = str(input("Digite nome da cidade ? ")).strip()
+n = nome.capitalize()
+print("O nome da cidade e igual ao nome Santo ? {}".format(n.startswith("Santo")))
+

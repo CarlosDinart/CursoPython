@@ -1,0 +1,8 @@
+k = float(input("Quanto seu carro correu por km/h: "))
+if k > 80:
+    print("Vc foi multado! Pagara o valor de R$ {:.1f}".format((k - 80)*7))
+print("Nao foi multado!")
+
+
+
+

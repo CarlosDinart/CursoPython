@@ -1,0 +1,27 @@
+""""n = input("Digite un numero ? "))
+print("unidade:", n[3])
+print("Dezena:", n[2])
+print("centena:", n[1])
+print("milhar:", n[0])"""
+
+#d = n.split()
+#print(d[0])
+#print(d[1])
+#print(d[2])
+#rint(d[3])
+
+# nao conseguir separar com numeros menores;
+
+
+n = str(input("Digite um numero ? " ))
+d = int(n.split
+print(" Unidade é: {}".format(d[0])))
+print("Dezena é: {}".format(d[1])))
+#print("Centena é: {}".format(d[1]))
+#print("Milhar é: {}".format(d[0]))
+
+
+# nao consigo fazer!!
+
+
+

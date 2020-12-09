@@ -1,0 +1,213 @@
+# Desafio 56 - Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas.
+#1. No final do programa, mostre: a média de idade do grupo;
+#2. Qual é o nome do homem mais velho ?
+#3. Quantas mulheres têm menos de 20 anos?
+#4. Qual e a mulher mais nova?
+
+
+
+
+soma = 0
+list=[]
+pessoa1=0
+pessoa2=0
+pessoa3=0
+pessoa4=0
+grupoh=[]
+grupom=[]
+idadeh=[]
+ipessoa1=0 # Idade pessoa 1
+npessoa1=0 # Nome pessoa 1
+ipessoa2=0 # Idade pessoa 2
+npessoa2=0 # Nome pessoa 2
+ipessoa3=0 # Idade pessoa 3
+npessoa3=0 # Nome pessoa 3
+ipessoa4=0 # Idade pessoa 4
+npessoa4=0 # Nome pessoa 4
+p1=0 # pessoa 1
+p2=0 # pessoa 2
+p3=0 # pessoa 3
+p4=0 # # pessoa 4
+hvelho=[] # lista homen mais velho
+idadem=[] # lista idade mulher
+impessoa1=0 # idade mulher 1
+nmpessoa1=0  # nome mulher 1
+impessoa2=0 # idade mulher 2
+nmpessoa2=0 #  nome mulher 2
+impessoa3=0 # idade mulher 3
+nmpessoa3=0 # nome mulher 3
+impessoa4=0 # idade mulher 4
+nmpessoa4=0 # nome mulher 4
+mnova=[] # lista mulher mais nova
+fmaior20=[] # referencia mulher menor que 20 anos
+immenor20=[] # lista mulher menor q 20 anos
+
+# laco de repeticao em relacao ao Nome, idade, genero:
+for c in range(0,4):
+    n = str(input("Qual seu nome ? "))
+    i = int(input("Qual a sua idade ? "))
+    g = str(input("Qual o seu sexo ? "))
+
+# lista de repeticado das pessoas:
+    list += [n, i, g]
+
+# Fatiamento da lita do conjunto por pessoas:
+    pessoa1 = list[0:3]
+    pessoa2 = list[3:6]
+    pessoa3 = list[6:9]
+    pessoa4 = list[9:12]
+
+# Calculo media soma das idades das pessoas:
+    soma = (soma + i)
+    media = soma / 4
+print("A media de idade é {:.1f}.".format(media))
+
+# Listas das pessoas por genero (Homen e Mulher)
+
+if "m" in pessoa1:
+    print("E homen! {}.".format(pessoa1))
+    grupoh += pessoa1
+    print("Faz parte do grupo de homen {}".format(grupoh))
+
+else:
+    print("E mulher! {}.".format(pessoa1))
+    grupom += pessoa1
+    print("Faz parte do grupo de mulher {}".format(grupom))
+
+if "m" in pessoa2:
+    print("E Homen! {}".format(pessoa2))
+    grupoh += pessoa2
+    print("Faz parte do grupo de homen {}".format(grupoh))
+
+else:
+    print("E mulher! {}".format(pessoa2))
+    grupom += pessoa2
+    print("Faz parte do grupo de mulher {}".format(grupom))
+
+if "m" in pessoa3:
+    print("E Homen! {}".format(pessoa3))
+    grupoh += pessoa3
+    print("Faz parte do grupo de homen {}".format(grupoh))
+
+else:
+    print("E mulher! {}".format(pessoa3))
+    grupom += pessoa3
+    print("Faz parte do grupo de mulher {}".format(grupom))
+
+if "m" in pessoa4:
+    print("E Homen! {}".format(pessoa4))
+    grupoh += pessoa4
+    print("Faz parte do grupo de homen {}".format(grupoh))
+
+else:
+    print("E mulher! {}".format(pessoa4))
+    grupom += pessoa4
+    print("Faz parte do grupo de mulher {}".format(grupom))
+
+#Fatiamento dos inteiros - idade grupo homen:
+
+    print("O grupo dos homens é {}".format(grupoh))
+    print("Qual o homen mais velho do grupo?")
+    idadeh += grupoh
+    ipessoa1 = grupoh[1:2]
+    npessoa1 = grupoh[0:1]
+    p1 = npessoa1 == ipessoa1
+    ipessoa2 = grupoh[4:5]
+    npessoa2 = grupoh[3:4]
+    p2 = npessoa2 == ipessoa2
+    ipessoa3 = grupoh[7:8]
+    npessoa3 = grupoh[6:7]
+    p3 = npessoa3 == ipessoa3
+    ipessoa4 = grupoh[10:11]
+    npessoa4 = grupoh[9:10]
+    p4 = npessoa4 == ipessoa4
+
+#Encontro do homen mais velho aplicando a Funcao Max( ), retorno o nome do homen mais velhor
+# aplicando os termos de condicoes if, elif, else:
+
+    hvelho = max(ipessoa1,ipessoa2,ipessoa3,ipessoa4)
+
+    if hvelho == ipessoa1:
+        ipessoa1 = npessoa1
+        print("O nome do homen mais velho {}".format(npessoa1))
+    elif hvelho == ipessoa2:
+        ipessoa2 = npessoa2
+        print("O nome do homen mais velho {}".format(npessoa2))
+    elif hvelho == ipessoa3:
+        ipessoa3 = npessoa3
+        print("O nome do homen mais velho {}".format(npessoa3))
+    elif hvelho == ipessoa4:
+        ipessoa4 = npessoa4
+        print("O nome do homen mais velho {}".format(npessoa4))
+
+# Fatiamento dos inteiros - idade grupo mulher:
+
+    print("O grupo das mulheres e {}".format(grupom))
+    print("Quantas mulheres sao menores de 20 anos ?")
+    idadem += grupom
+    impessoa1= grupom[1:2]
+    nmpessoa1= grupom[0:1]
+    impessoa2= grupom[4:5]
+    nmpessoa2= grupom[3:4]
+    impessoa3= grupom[7:8]
+    nmpessoa3= grupom[6:7]
+    impessoa4= grupom[10:11]
+    nmpessoa4= grupom[9:10]
+    fmaior20 += [20]
+
+# Encontro das mulheres menor de 20 anos e a mulher mais novas:
+# immenor20 - lita das mulheres menor que 20 anos;
+# mnova - lista da mulher mais nova;
+# aplicando os termos de condicoes if, elif, else:
+
+    if impessoa1 < fmaior20 and impessoa1 != []:
+        impessoa1 = nmpessoa1
+        immenor20 += nmpessoa1
+        mnova+= impessoa1
+    if impessoa2 < fmaior20 and impessoa2 != []:
+        impessoa2 = nmpessoa2
+        immenor20 += nmpessoa2
+        mnova+= impessoa2
+    if impessoa3 < fmaior20 and impessoa3 != []:
+        impessoa3 = nmpessoa3
+        immenor20 += nmpessoa3
+        mnova+= impessoa3
+    if impessoa4 < fmaior20 and impessoa4 != []:
+        impessoa4 = nmpessoa4
+        immenor20 += nmpessoa4
+        mnova+= impessoa4
+
+    print("Todas as mulheres menor de 20 anos {}".format(immenor20))
+
+# Retorno da mulher mais nova aplicando a funcao min ( ):
+
+    print("Qual e a mulher mais nova ?")
+    print("A mulher mais nova {}".format(min(mnova)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

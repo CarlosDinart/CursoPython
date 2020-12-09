@@ -1,0 +1,4 @@
+n1 = 4
+n2 = 8
+print("As notas do aluno foram:","nota 1 = ",n1 ,",nota 2 = ", n2, ".")
+print("A media entre as notas {} e {}, é {}".format(n1, n2, (n1 + n2)/2))

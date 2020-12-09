@@ -1,0 +1,11 @@
+# condicao exitencia do numero primo
+# E primo quando for divisivel por 1 e por ele mesmo;
+# Regra: Primo resultar a divisao o resto != zero ate o divisor ser >= quociente;
+
+d = int(input("Digite um numero ? "))
+
+if d % 2 != 0 and d > 2 and d % 3 != 0 and d > 3 and d % 5 != 0 and d > 5 and d % 7 != 0 and d > 7 and d % 11 != 0 and d > 11:
+    print("E primo {}".format(d))
+
+else:
+    print("Nao é primo. E sim numero composto! ")

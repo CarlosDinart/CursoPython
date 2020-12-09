@@ -1,0 +1,17 @@
+a = float(input("Digite um segmento ? "))
+b = float(input("Digite outro segmento ? "))
+c = float(input("Digite mais segmento ? "))
+# Formula para condicao de existencia do triangulo.
+if a + b > c and b + c > a and a + c > b:
+    print("A sequencia forman um trinagulo.")
+    if a == b == c:
+        print("E triangulo Equilatero!")
+    elif a == b != c != a or a == c != b != a or c == b != a != c:
+        print("E un triangulo Isoceles! ")
+    elif a != b != c != a:
+        print("Ë triangulo Escaleno! ")
+else:
+    print("A sequencia nao forman um triangulo.")
+
+
+

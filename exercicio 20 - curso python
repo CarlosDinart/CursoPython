@@ -1,0 +1,22 @@
+"""import random
+n1 = input("Primeiro aluno ? ")
+n2 = input("Segundo aluno ? ")
+n3 = input("Terceiro aluno ? ")
+n4 = input("Quarto aluno ? ")
+lista = [n1, n2, n3, n4]
+random.shuffle(lista)
+print("A ordem de apresentacao sera:", lista)"""
+
+from random import shuffle
+n1 = int(input("Primeiro numero ? "))
+n2 = int(input("Segundo numero ? "))
+n3 = int(input("Terceiro numero ? "))
+n4 = int(input("Quarto numero ? "))
+lista = [n1, n2, n3, n4]
+shuffle(lista)
+print("A ordem de apresentacao sera:", lista)
+
+
+
+
+

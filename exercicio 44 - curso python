@@ -1,0 +1,10 @@
+p = float(input("Qual o preco do produto ? R$ "))
+pa = str(input("Qual a condicao de pagamento ? ")).strip()
+if pa == "dinheiro" or pa == "cheque":
+    print("O preco a vista dinheiro ou cheque é R$ {:.2f} com desconto de 10%".format(p - (p * 10/100)))
+elif pa == "cartao":
+    print("O preco a vista no {} é R$ {:.2f} com desconto de 5%".format(pa, p -(p * 5/100)))
+elif pa == "2x no cartao":
+    print("O preco sem desconto, e normal.")
+elif pa == "3x ou mais":
+    print("O preco em 3x no cartao é R$ {:.2f} com acrescimo de 20% de juros.".format(p +(p * 20/100)))

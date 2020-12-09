@@ -1,0 +1,12 @@
+
+n1 = float(input("Digite a primeira nota ? "))
+n2 = float(input("Digite a segunda nota ? "))
+m = (n1 + n2)/2
+if m < 5.0:
+    print(" Esta reprovado sua nota foi {:.1f} menor de 5".format(m))
+elif m >= 5 and m < 7:  # verificar o intervalo para comando (5,6.9)
+    print(" Esta em recuperacao sua nota foi {:.1f} menor de 7".format(m))
+elif m >= 7:
+    print("Esta Aprovado! ")
+
+

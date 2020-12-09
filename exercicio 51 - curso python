@@ -1,0 +1,40 @@
+# fomumula da progressao aritimetica:
+# an = a0 + (n -1)*r
+# an = termo geral
+# a0 = primeiro termo
+# n = numeros de termos
+# r = razao da PA
+
+# sintaxe da PA tendo a1 e r:
+""""a0 = int(input("Digite o primeiro termo ? "))
+r = int(input("Digite a razao ou passo da sequencia ? "))
+c = 10
+a10 = a0 + (c -1)*r
+for c in range(a0, a10 +1, r):
+    print(c, end =" ")"""
+
+# Exercicio 50 - Crie um programa leia PA, para usuario digitar o primeiro termo "a1" e o ultimo termo "an".
+# Qual e o valor da razao? E apresente os 10 algarismos.
+# formula: an = a1 + (n -1)*r
+from math import trunc
+a1 = int(input("Digite o primeiro termo ? "))
+an = int(input("Digite o ultimo termo ? "))
+c = 10
+
+if a1 < an:
+    r = trunc((an + a1) / (c - 1))
+    print("A razao é {}.".format(trunc(r)))
+
+    for c in range(a1, an, r):
+        print(c, end=" ")
+
+elif a1 > an:
+    r = trunc((an + a1) / -(c - 1))
+    print("A é {}".format(trunc(r)))
+
+    for c in range(a1, an, r):
+        print(c, end=" ")
+
+
+
+

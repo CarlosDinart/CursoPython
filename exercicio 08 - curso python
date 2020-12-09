@@ -1,0 +1,2 @@
+n1 = 3
+print("{} metros, \n Quantos centimetros tem? {}, \n Quantos milimetros tem? {}, \n Quantos decametros tem? {:.3f}, \n Quantos Quilometros tem? {}".format(n1, (n1 * 100), (n1 * 1000), (n1 * 0.10), (n1 * 0.001)))

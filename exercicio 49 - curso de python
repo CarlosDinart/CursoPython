@@ -1,0 +1,8 @@
+from time import sleep
+m = int(input("Digite um numero ? "))
+print("A tabuada de {}".format(m))
+for c in range(0, 10 + 1):
+    sleep(1)
+    mul = c * m
+    print(" {} x {} = {}".format(m, c, mul))
+print("Fim!")

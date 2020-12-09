@@ -1,0 +1,12 @@
+a = int(input(" Digite un numero ? "))
+b = int(input(" Digite outro numero ? "))
+if a > b:
+    print("O primeiro e o maior {}".format(a))
+elif a < b:
+    print("O segundo e o maior {}".format(b))
+else:
+    print("Nao tem valor maior!")
+
+
+
+

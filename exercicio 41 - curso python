@@ -1,0 +1,16 @@
+from datetime import date
+n = int(input(" Digite o seu ano de nascimento ? "))
+ano = date.today().year
+i = ano - n
+if i <= 9:
+    print("A idade de {} é categoria mirim!".format(i))
+elif i > 9 and i <= 14: # fomaula para o comando enter
+    print("A idade de {} e categoria junvenil".format(i))
+elif i >= 15 and i <= 19:
+    print("A idade de {} é categoria junior!".format(i))
+elif i >= 20 and i <=25:
+    print("A idade de {} é categoria Senio!".format(i))
+elif i > 25:
+    print("A idade de {} é categoria master!".format(i))
+
+
